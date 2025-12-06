@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  body {
+    overflow-x: hidden;
+  }
+  
+  :root {
+    /* Black theme for WebCasus */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 11%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 11%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 11%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 0 0% 100%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 11%;
+    --ring: 0 0% 100%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --elevated: 0 0% 11%;
+    --text-secondary: 0 0% 100% / 0.6;
+    --glass-blur: 0 0% 0% / 0.8;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-secondary {
+    color: hsl(var(--text-secondary));
+  }
+
+  .bg-elevated {
+    background-color: hsl(var(--elevated));
+  }
+
+  .bg-glass-blur {
+    background-color: hsl(var(--glass-blur));
+    backdrop-filter: blur(12px);
+  }
+}
