@@ -1,0 +1,17 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap location (uncomment and update with your sitemap URL once you have one)
+# Sitemap: https://webcasus.com/sitemap.xml
+
+# Disallow crawling of admin and login pages (if any)
+Disallow: /admin/
+Disallow: /login/
+Disallow: /wp-admin/
+
+# Disallow crawling of development and test pages
+Disallow: /test/
+Disallow: /staging/
+
+# Allow all other pages to be crawled
