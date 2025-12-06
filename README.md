@@ -154,6 +154,7 @@ Copy code
 git clone https://github.com/yourusername/WebCasus-SPA.git
 cd WebCasus-SPA
 npm install
+
 ▶️ Development
 bash
 Copy code
@@ -165,6 +166,7 @@ bash
 Copy code
 npm run build
 Output goes to dist/.
+
 
 Preview build:
 
