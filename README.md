@@ -1,73 +1,173 @@
-# Welcome to your Lovable project
+# WebCasus.com – AI Website Builder (React + Vite + Tailwind + Framer Motion + Lottie)
 
-## Project info
+A production-grade single-page application for WebCasus.com.  
+Built with React + Vite, Tailwind CSS, Framer Motion, and Lottie.  
+Fully responsive, AI-styled, and optimized for deployment on Cloudflare Pages.
 
-**URL**: https://lovable.dev/projects/d8e094fe-8964-4921-b1bc-cdc19aa3aff6
+---
 
-## How can I edit this code?
+## 🚀 Tech Stack
 
-There are several ways of editing your application.
+- **React + Vite**  
+- **Tailwind CSS** (mobile-first, Poppins font)  
+- **Framer Motion** (scroll + interactive animations)  
+- **Lottie** (AI assembly visuals)  
+- **Black UI theme**  
+- **Cloudflare Pages ready**  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d8e094fe-8964-4921-b1bc-cdc19aa3aff6) and start prompting.
+## 🎨 Color System
 
-Changes made via Lovable will be committed automatically to this repo.
+| Purpose | Color |
+|--------|--------|
+| Background | `#000000` |
+| Primary Text | `#FFFFFF` |
+| Secondary Text | `#FFFFFF99` |
+| Elevated Surfaces | `#1B1B1B` |
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📁 Project Structure
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+src/
+├── components/
+│ ├── Header.jsx
+│ ├── Hero.jsx
+│ ├── Features.jsx
+│ ├── HowItWorks.jsx
+│ ├── LiveDemo.jsx
+│ ├── Pricing.jsx
+│ ├── Testimonials.jsx
+│ ├── FAQ.jsx
+│ ├── Contact.jsx
+│ ├── Footer.jsx
+│
+├── common/
+│ ├── FeatureCard.jsx
+│ ├── PricingCard.jsx
+│ ├── TestimonialCard.jsx
+│
+├── animations/
+│ └── variants.js
+│
+├── hooks/
+│ └── useScrollAnimation.js
+│
+├── assets/
+│ ├── lottie/
+│ ├── images/
+│
+├── App.jsx
+└── main.jsx
 
-Follow these steps:
+markdown
+Copy code
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## ✨ Features
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 1. Floating Header
+- Transparent → glass blur on scroll  
+- Shrinks smoothly  
+- Mobile hamburger with slide-down  
+- Keyboard accessible  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 2. Hero Section
+- Split layout  
+- Two CTAs  
+- Lottie AI animation  
+
+### 3. Platform Features
+- AI Website Generator  
+- UI/UX Layout Builder  
+- AI Brand Kit Creator  
+- AI SEO + Content Suite  
+- Smart Section Builder  
+- One-click Cloudflare Publish  
+- Template Marketplace  
+
+Animated cards with fade-up + hover tilt.
+
+### 4. How It Works Timeline
+- Line draw animation  
+- Wireframe morph (optional)  
+
+### 5. Live AI Demo
+- Fake dashboard preview  
+- Auto-block assembly animation  
+
+### 6. Pricing
+- Starter. Pro. Enterprise  
+- Hover elevation  
+- Badge for best plan  
+
+### 7. Testimonials
+- Subtle shine  
+- Swipe carousel on mobile  
+
+### 8. FAQ
+- Accordion with smooth transitions  
+
+### 9. Contact
+- Styled form  
+- Animated AI bubble  
+
+### 10. Footer
+- Minimal  
+- White text with hover brightening  
+
+---
+
+## 🧩 Animation Setup
+
+- All custom variants stored in  
+src/animations/variants.js
+
+sql
+Copy code
+
+- Scroll trigger using:
+src/hooks/useScrollAnimation.js
+
+yaml
+Copy code
+
+- All non-critical animations lazy-loaded.
+
+---
+
+## ⚡ Performance
+
+- Dynamic imports  
+- React.lazy + Suspense  
+- Lottie splits  
+- Intersection Observer triggers  
+- Tailwind tree-shakes unused classes  
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/yourusername/WebCasus-SPA.git
+cd WebCasus-SPA
+npm install
+▶️ Development
+bash
+Copy code
 npm run dev
-```
+Runs Vite dev server.
 
-**Edit a file directly in GitHub**
+🏗️ Production Build
+bash
+Copy code
+npm run build
+Output goes to dist/.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Preview build:
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d8e094fe-8964-4921-b1bc-cdc19aa3aff6) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+bash
+Copy code
+npm run preview
